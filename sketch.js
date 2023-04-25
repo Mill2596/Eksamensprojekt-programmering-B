@@ -18,15 +18,16 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   sun = new Sun(windowWidth/2, windowHeight/2) 
   //https://solarsystem.nasa.gov/planet-compare/
+  //https://nssdc.gsfc.nasa.gov/planetary/factsheet/index.html
   planets = [
-    new Planet(windowWidth/2, windowHeight/2, 1.95176, 1, 1, 0.1136751165),
-    new Planet(windowWidth/2, windowHeight/2, 4.84144, 2, 20, 0.0445037828),
-    new Planet(windowWidth/2, windowHeight/2, 5.0968, 3, 40, 0.0273777583),
-    new Planet(windowWidth/2, windowHeight/2, 2.7116, 4, 60, 0.0145564645),
-    new Planet(windowWidth/2, windowHeight/2, 55.9288, 5, 120, 0.0023080243),
-    new Planet(windowWidth/2, windowHeight/2, 109.435392, 6, 180, 0.0009294112),
-    new Planet(windowWidth/2, windowHeight/2, 20.2896, 7, 200, 0.0003258921),
-    new Planet(windowWidth/2, windowHeight/2, 19.6976, 8, 220, 0.0001661405)
+    new Planet(windowWidth/2, windowHeight/2, 1.95176, 1, 5.79, 0.474),
+    new Planet(windowWidth/2, windowHeight/2, 4.84144, 2, 10.82, 0.35),
+    new Planet(windowWidth/2, windowHeight/2, 5.0968, 3, 14.96, 0.298),
+    new Planet(windowWidth/2, windowHeight/2, 2.7116, 4, 22.80, 0.241),
+    new Planet(windowWidth/2, windowHeight/2, 55.9288, 5, 77.85, 0.131),
+    new Planet(windowWidth/2, windowHeight/2, 46.5856 , 6, 143.2, 0.097),
+    new Planet(windowWidth/2, windowHeight/2, 20.2896, 7, 286.7, 0.068),
+    new Planet(windowWidth/2, windowHeight/2, 19.6976, 8, 451.5, 0.054)
   ]
 }
 
