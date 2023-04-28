@@ -9,6 +9,7 @@ let pictures = ["sun_icon", "mercury_icon", "venus_icon", "earth_icon", "mars_ic
 function preload() {
   for (let i = 0; i < planets_pic.length; i++ ){
     pictures[i] = loadImage("Pictures/" + planets_pic[i] + ".png")
+    console.log(pictures)
   }
   stars = loadImage("Pictures/Stars.jpg")
 }
@@ -49,7 +50,7 @@ function draw() {
 }
 
 function zoom() {
-  if (dist(mouseX, mouseY, sun.x, sun.y) < Math.sqrt((sun.d_sun/2))+20) {
+  if (dist(mouseX, mouseY, sun.x, sun.y) < sun.d_sun/2) {
     set_pic = 0;
     if (link) {
       link.remove();
@@ -58,7 +59,7 @@ function zoom() {
     link.position(5,180);
   }
   for (let i = 0; i < planets.length; i++) {
-    if (dist(mouseX, mouseY, planets[i].x, planets[i].y) < Math.sqrt((planets[i].d/2)) + 20) {
+    if (dist(mouseX, mouseY, planets[i].x, planets[i].y) < planets[i].d/2 + 10) {
       set_pic = i+1;
       if (link) {
         link.remove(); 
