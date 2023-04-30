@@ -23,8 +23,8 @@ class Planet extends Sun{
 
     move(){
         //x = x_coord + radius * cos(angle) 
-        this.x = windowWidth/2 + (this.au + this.d_sun/2 )  * cos(this.start);
-        this.y = windowHeight/2 + (this.au + this.d_sun/2)* sin(this.start);
+        this.x = windowWidth/2 + (this.au - this.d/2 + this.d_sun/2)  * cos(this.start);
+        this.y = windowHeight/2 + (this.au - this.d/2 + this.d_sun/2)* sin(this.start);
         this.show()
         this.start += this.angle
     }
